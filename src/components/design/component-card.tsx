@@ -54,7 +54,9 @@ export function ComponentCard({
 
   const component = getComponent(name);
 
-  const registryUrl = `https://${baseUrl}/r/${name}.json`;
+  const registryUrl = baseUrl.startsWith('https://')
+  ? `${baseUrl}/r/${name}.json`
+  : `https://${baseUrl}/r/${name}.json`;
   const npxCommand = `npx shadcn@latest add ${registryUrl}`;
 
   const copyToClipboard = async () => {
