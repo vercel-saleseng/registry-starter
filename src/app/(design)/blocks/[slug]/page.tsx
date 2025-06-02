@@ -43,8 +43,8 @@ export default async function BlockPage({
 
       <ComponentCard
         name={block.name}
-        // baseUrl={process.env.VERCEL_BRANCH_URL ?? ""}
-        baseUrl="https://cyan-pillows-leave.loca.lt"
+        baseUrl={process.env.VERCEL_BRANCH_URL ?? ""}
+        // baseUrl="https://cyan-pillows-leave.loca.lt"
         title="Block Preview"
         promptTitle={`${block.title} Block Kit`}
         components={components}
