@@ -175,7 +175,7 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/starters/(minimal)/blank/page.tsx",
+          "path": "src/app/starters/blocks/login/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
@@ -227,7 +227,7 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/starters/(minimal)/blank/page.tsx",
+          "path": "src/app/starters/blocks/hero/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
@@ -253,7 +253,7 @@
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/starters/(minimal)/blank/page.tsx",
+          "path": "src/app/starters/blocks/promo/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         }
