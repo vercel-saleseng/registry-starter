@@ -57,6 +57,52 @@ pnpm dev
 
 Your app should now be running on [localhost:3000](http://localhost:3000).
 
+## Testing your registry locally
+
+To test your registry with the "Open in v0" functionality locally, you can use tools like [Local Tunnel](https://theboroer.github.io/localtunnel-www/) or [Ngrok](https://ngrok.com/docs/getting-started/) to expose your local development server to the internet. This will provide you with a temporary URL that can be used as the `baseUrl` for testing.
+
+### Using Local Tunnel
+
+1. Install Local Tunnel globally:
+
+    ```bash
+    npm install -g localtunnel
+    ```
+
+2. Start your local development server:
+
+    ```bash
+    pnpm dev
+    ```
+
+3. In a new terminal, run Local Tunnel to expose your local server:
+
+    ```bash
+    lt --port 3000
+    ```
+
+4. Local Tunnel will provide you with a URL. Use this URL as the `baseUrl` in your application to test the "Open in v0" functionality.
+
+### Using Ngrok
+
+1. Download and install Ngrok from [ngrok.com](https://ngrok.com/).
+
+2. Start your local development server:
+
+    ```bash
+    pnpm dev
+    ```
+
+3. In a new terminal, run Ngrok to expose your local server:
+
+    ```bash
+    ngrok http 3000
+    ```
+
+4. Ngrok will provide you with a forwarding URL. Use this URL as the `baseUrl` in your application to test the "Open in v0" functionality.
+
+By using either Local Tunnel or Ngrok, you can easily test the integration of your components with v0.dev by providing a publicly accessible URL for your local development environment.
+
 ## File Structure
 
 `app/(design)` routes contains the registry pages.
